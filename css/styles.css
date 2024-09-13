@@ -1,3 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 body {
   color: #434455;
   font-family: 'Roboto', sans-serif;
@@ -11,8 +34,24 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+img {
+  display: block;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
+  height: 72px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo-dark {
@@ -24,6 +63,11 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .logo-light {
@@ -45,7 +89,20 @@ ul {
   color: #2e2f42;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-link {
+  display: block;
+  padding: 24px 0;
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
@@ -75,11 +132,14 @@ ul {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contact-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
 .hero-section {
@@ -93,6 +153,11 @@ ul {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  width: 496px;
 }
 
 .button {
@@ -108,6 +173,13 @@ ul {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .button:hover {
@@ -124,6 +196,19 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-text {
