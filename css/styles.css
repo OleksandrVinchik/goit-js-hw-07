@@ -144,6 +144,8 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -155,8 +157,7 @@ img {
   letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   width: 496px;
 }
 
@@ -190,12 +191,18 @@ img {
   background-color: #404bbf;
 }
 
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
 .advantages-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -211,10 +218,22 @@ img {
   overflow: hidden;
 }
 
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  width: calc((100%-72px) / 4);
+}
+
 .advantages-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .team-section {
