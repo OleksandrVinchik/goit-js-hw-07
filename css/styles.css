@@ -80,6 +80,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .logo-light-accent {
@@ -159,7 +160,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
 }
 
 .button {
@@ -182,6 +183,10 @@ img {
   padding-top: 16px;
   padding-right: 32px;
   padding-left: 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button:hover {
@@ -273,6 +278,11 @@ img {
   margin-bottom: 8px;
 }
 
+.team-container {
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
+}
+
 .team-text {
   font-size: 16px;
   line-height: 1.5;
@@ -286,6 +296,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  background: #fff;
 }
 
 .portfolio-title {
