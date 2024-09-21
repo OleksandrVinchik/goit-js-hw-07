@@ -367,6 +367,7 @@ img {
 
 .social-list-icon {
   fill: #f4f4fd;
+  display: flex;
 }
 
 .social-list-link:hover,
