@@ -370,6 +370,10 @@ img {
   display: flex;
 }
 
+.social-list-icon {
+  display: flex;
+}
+
 .social-list-link:hover,
 .social-list-link:focus {
   background: #404bbf;
