@@ -173,7 +173,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('/images/people-office.jpg');
+    url('../images/people-office.jpg');
   background-size: cover;
   background-color: #1e1823;
   background-repeat: no-repeat;
@@ -345,8 +345,15 @@ img {
   flex-direction: row;
 }
 
+.social-list-item {
+  width: 40px;
+  height: 40px;
+}
+
 .social-list-link {
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
   padding: 12px;
   background: #4d5ae5;
   display: block;
