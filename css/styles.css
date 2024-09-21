@@ -338,7 +338,7 @@ img {
 
 .list-social {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,13 +352,16 @@ img {
 
 .social-list-link {
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 12px;
   background: #4d5ae5;
   display: block;
   line-height: 0;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon {
@@ -379,6 +382,7 @@ img {
 
 .portfolio-item {
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-overlay {
@@ -399,7 +403,7 @@ img {
   background-color: #4d5ae5;
   padding: 40px 32px;
   transform: translateY(100%);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-overlay-p {
