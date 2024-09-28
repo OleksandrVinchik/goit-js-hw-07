@@ -390,8 +390,10 @@
             <div class="footer-subscribe">
                 <p class="footer-item-p">Subscribe</p>
                 <form class="subscribe-form">
-                    <input class="subscribe-form-input" type="email" name="user-subscribe-email" placeholder="E-mail"
-                        required />
+                    <label class="footer-subscribe-label" for="user-subscribe-email">
+                        <input class="subscribe-form-input" id="user-subscribe-email" type="email"
+                            name="user-subscribe-email" placeholder="E-mail" required />
+                    </label>
                     <button class="subscribe-form-submit" type="submit">
                         Subscribe<svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-Fly"></use>
@@ -416,18 +418,18 @@
                     <label class="review-form-field-label" for="user-name">Name</label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" id="user-name" name="user-name" type="text" required />
-                        <svg class="review-form-input-icon" width="18" height="18">
+                        <svg class="review-form-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="review-form-field-wrapper">
                     <label class="review-form-field-label" for="user-email">
-                        Phone number
+                        Phone
                     </label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" id="user-phone" name="user-phone" type="tel" />
-                        <svg class="review-form-input-icon" width="18" height="18">
+                        <svg class="review-form-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
@@ -438,12 +440,12 @@
                     </label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" id="user-email" name="user-email" type="email" />
-                        <svg class="review-form-input-icon" width="18" height="18">
+                        <svg class="review-form-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="review-form-field-wrapper">
+                <div class="review-form-field-wrapper div-f">
                     <label class="review-form-field-label" for="user-comment">
                         Comment
                     </label>
@@ -451,9 +453,9 @@
                         required></textarea>
                 </div>
                 <div class="review-form-checkbox-wrapper">
-                    <input class="review-form-checkbox visually-hidden" id="privacy-policy" type="checkbox"
-                        name="privacy-policy" value="true" required />
-                    <label class="review-form-checkbox-label" for="privacy-policy">
+                    <input class="review-form-checkbox visually-hidden" id="user-privacy" type="checkbox"
+                        name="user-privacy" value="true" required />
+                    <label class="review-form-checkbox-label" for="user-privacy">
                         <span class="review-form-custom-checkbox">
                             <svg class="review-form-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-Vector"></use>
