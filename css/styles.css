@@ -826,4 +826,5 @@ img {
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
   background-color: #404bbf;
+  fill: #ffffff;
 }
