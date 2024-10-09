@@ -304,7 +304,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 
 .nav-link-mob {
@@ -319,6 +318,10 @@ button {
 
 .nav-link-mob .current-mob {
   position: relative;
+  color: #404bbf;
+}
+
+.mob-color {
   color: #404bbf;
 }
 
@@ -345,7 +348,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 .contact-link-mob {
   font-weight: 500;
@@ -358,12 +360,19 @@ button {
   color: #434455;
 }
 
+.current-mob {
+  color: #404bbf;
+}
+
 .address-mob .contact-link-mob:hover {
   color: #404bbf;
 }
 
 .address-mob .contact-link-mob:focus {
   color: #404bbf;
+}
+.address-mob {
+  margin-bottom: 48px;
 }
 
 .list-social-mob {
@@ -388,7 +397,7 @@ button {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 12px;
+
   background: #4d5ae5;
   line-height: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -521,14 +530,13 @@ button {
 @media screen and (min-width: 1158px) {
   .hero-section {
     max-width: 1440px;
-    min-height: 600px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/people-office.jpg');
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 
   .hero-title {
@@ -589,7 +597,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .container-advantages {
-    max-width: 736px;
+    max-width: 768px;
   }
 
   .advantages-list {
@@ -737,7 +745,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .container-team {
-    max-width: 552px;
+    max-width: 584px;
   }
 
   .team-flex {
@@ -753,7 +761,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .container-team {
-    max-width: 1128px;
+    max-width: 1158px;
   }
 
   .team-list {
@@ -840,7 +848,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    row-gap: 24px;
+    row-gap: 72px;
   }
 }
 
@@ -861,6 +869,9 @@ button {
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+  .portfolio-flex {
+    row-gap: 40px;
   }
 }
 /* footer */
@@ -892,7 +903,8 @@ button {
 }
 .footer {
   background-color: #2e2f42;
-  display: flex;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
@@ -901,8 +913,6 @@ button {
   flex-wrap: wrap;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 96px;
-  padding-bottom: 96px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -913,6 +923,7 @@ button {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 72px;
 }
 .logo-center {
   text-align: center;
@@ -923,7 +934,6 @@ button {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   width: 288px;
-  margin-bottom: 72px;
 }
 
 .footer-item-p {
@@ -949,7 +959,6 @@ button {
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px;
   text-align: center;
 }
 .div-social-media {
@@ -957,6 +966,7 @@ button {
   margin-right: auto;
   align-items: center;
   justify-content: center;
+  margin-bottom: 72px;
 }
 .footer-list-item {
   width: 40px;
@@ -1075,8 +1085,7 @@ button {
   }
   .subscribe-form {
     gap: 24px;
-    margin-left: 0;
-    margin-right: o;
+
     justify-content: start;
   }
   .footer-container-logo {
@@ -1092,23 +1101,26 @@ button {
   .footer-container {
     max-width: 1158px;
     flex-wrap: nowrap;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
+
+    padding-left: 15px;
+    padding-right: 15px;
     justify-content: start;
   }
   .footer-container-logo {
     justify-content: start;
+    margin-bottom: 0;
   }
   .footer {
     justify-content: start;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .div-social-media {
     margin-left: 0;
     margin-right: 0;
     align-items: center;
     justify-content: start;
+    margin-bottom: 0;
   }
   .subscribe-form-input {
     width: 264px;
@@ -1155,8 +1167,8 @@ button {
   border-radius: 4px;
   padding-top: 72px;
   padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   transform: translate(-50%, -50%);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -1366,8 +1378,9 @@ button {
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  transform: translateX(50%);
+  transform: translateX(27%);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
 }
 
 .review-form-submit-btn:hover,
@@ -1379,5 +1392,12 @@ button {
   .modal {
     width: 408px;
     min-height: 584px;
+  }
+  .modal {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .review-form-submit-btn {
+    transform: translateX(50%);
   }
 }
