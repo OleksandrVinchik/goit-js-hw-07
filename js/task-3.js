@@ -1,11 +1,14 @@
-function getElementWidth(content, padding, border) {
-  const ccc = Number.parseFloat(content);
-  const ppp = Number.parseFloat(padding);
-  const bbb = Number.parseFloat(border);
-  const borderBox = Number.parseFloat(ccc + ppp * 2 + bbb * 2);
-  return borderBox;
+function checkForSpam(message) {
+  const normalizedStr = message.toLowerCase();
+  const result =
+    normalizedStr.includes(`spam`) || normalizedStr.includes(`sale`);
+  return result;
 }
 
-console.log(getElementWidth('50px', '8px', '4px'));
-console.log(getElementWidth('60px', '12px', '8.5px'));
-console.log(getElementWidth('200px', '0px', '0px'));
+console.log(checkForSpam('Latest technology news')); // false
+console.log(checkForSpam('JavaScript weekly newsletter')); // false
+console.log(checkForSpam('Get best sale offers now!')); // true
+console.log(checkForSpam('Amazing SalE, only tonight!')); // true
+console.log(checkForSpam('Trust me, this is not a spam message')); // true
+console.log(checkForSpam('Get rid of sPaM emails. Our book in on sale!')); // true
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
